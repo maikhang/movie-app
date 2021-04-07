@@ -4,10 +4,10 @@
           <div class="row">
              <div class="col-lg-3 col-md-4">
                 <ul class="f-link list-unstyled mb-0">
-                   <li><a href="#">About Us</a></li>
-                   <li><a href="movie-category.html">Movies</a></li>
-                   <li><a href="show-category.html">Tv Shows</a></li>
-                   <li><a href="#">Coporate Information</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Movies</a></li>
+                  <li><a href="#">Tv Shows</a></li>
+                  <li><a href="#">Actor</a></li>
                 </ul>
              </div>
              <div class="col-lg-3 col-md-4">
@@ -26,7 +26,7 @@
              </div>
              <div class="col-lg-3 col-md-12 r-mt-15">
                 <div class="d-flex">
-                   <a href="#" class="s-icon">
+                   <a href="https://www.facebook.com/khang.mai.794/" class="s-icon">
                    <i class="ri-facebook-fill"></i>
                    </a>
                    <a href="#" class="s-icon">
@@ -45,7 +45,7 @@
     </div>
     <div class="copyright py-2">
        <div class="container-fluid">
-          <p class="mb-0 text-center font-size-14 text-body">STREAMIT - 2020 All Rights Reserved</p>
+          <p class="mb-0 text-center font-size-14 text-body">STREAMIT - 2021 All Rights Reserved</p>
        </div>
     </div>
  </footer>

@@ -13,22 +13,25 @@
                          <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
                       </div>
                    </a>
-                   <a class="navbar-brand" href="{{ asset('asset/html/frontend/html/index.html') }}"> <img class="img-fluid logo" src="{{ asset('asset/html/frontend/html/images/logo.png') }}"
+                   <a class="navbar-brand" href="{{ route('home.index') }}"> <img class="img-fluid logo" src="{{ asset('asset/html/frontend/html/images/logo.png') }}"
                       alt="streamit" /> </a>
                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <div class="menu-main-menu-container">
-                         <ul id="top-menu" class="navbar-nav ml-auto">
-                            <li class="menu-item">
-                               <a href="{{ asset('asset/html/frontend/html/index.html') }}">Home</a>
-                            </li>
-                            <li class="menu-item">
-                               <a href="{{ asset('asset/html/frontend/html/how-category.html') }}s">Tv Shows</a>
-                            </li>
-                            <li class="menu-item">
-                               <a href="{{ asset('asset/html/frontend/html/movie-category.html') }}">Movies</a>
-                            </li>
-                         </ul>
-                      </div>
+                     <div class="menu-main-menu-container">
+                        <ul id="top-menu" class="navbar-nav ml-auto">
+                           <li class="menu-item">
+                              <a href="{{ route('home.index') }}">Home</a>
+                           </li>
+                           <li class="menu-item">
+                              <a href="{{ route('movie.index') }}">Movies</a>
+                           </li>
+                           <li class="menu-item">
+                              <a href="{{ route('tv.index') }}">Tv Shows</a>
+                           </li>
+                           <li class="menu-item">
+                              <a href="{{ route('actor.index') }}">Actors</a>
+                           </li>
+                        </ul>
+                     </div>
                    </div>
                    <div class="mobile-more-menu">
                       <a href="javascript:void(0);" class="more-toggle" id="dropdownMenuButton"
@@ -38,20 +41,20 @@
                       <div class="more-menu" aria-labelledby="dropdownMenuButton">
                          <div class="navbar-right position-relative">
                             <ul class="d-flex align-items-center justify-content-end list-inline m-0">
-                               <li>
-                                  <a href="#" class="search-toggle">
-                                  <i class="ri-search-line"></i>
-                                  </a>
-                                  <div class="search-box iq-search-bar">
-                                     <form action="#" class="searchbox">
-                                        <div class="form-group position-relative">
-                                           <input type="text" class="text search-input font-size-12"
-                                              placeholder="type here to search...">
-                                           <i class="search-link ri-search-line"></i>
-                                        </div>
-                                     </form>
-                                  </div>
-                               </li>
+                              {{-- <li>
+                                 <a href="#" class="search-toggle">
+                                 <i class="ri-search-line"></i>
+                                 </a>
+                                 <div class="search-box iq-search-bar">
+                                    <form action="#" class="searchbox">
+                                       <div class="form-group position-relative">
+                                          <input type="text" class="text search-input font-size-12"
+                                             placeholder="Type here to search...">
+                                          <i class="search-link ri-search-line"></i>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </li> --}}
                                <li class="nav-item nav-icon">
                                   <a href="#" class="search-toggle position-relative">
                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22"
@@ -101,13 +104,13 @@
                                </li>
                                <li>
                                   <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center">
-                                  <img src="images/user/user.jpg" class="img-fluid avatar-40 rounded-circle"
+                                  <img src="{{ asset('asset/html/frontend/html/images/user/icon.png') }}" class="img-fluid avatar-40 rounded-circle"
                                      alt="user">
                                   </a>
                                   <div class="iq-sub-dropdown iq-user-dropdown">
                                      <div class="iq-card shadow-none m-0">
                                         <div class="iq-card-body p-0 pl-3 pr-3">
-                                           <a href="{{ asset('asset/html/frontend/html/manage-profile.html') }}" class="iq-sub-card setting-dropdown">
+                                           <a href="#" class="iq-sub-card setting-dropdown">
                                               <div class="media align-items-center">
                                                  <div class="right-icon">
                                                     <i class="ri-file-user-line text-primary"></i>
@@ -117,7 +120,7 @@
                                                  </div>
                                               </div>
                                            </a>
-                                           <a href="{{ asset('asset/html/frontend/html/setting.html') }}" class="iq-sub-card setting-dropdown">
+                                           <a href="#" class="iq-sub-card setting-dropdown">
                                               <div class="media align-items-center">
                                                  <div class="right-icon">
                                                     <i class="ri-settings-4-line text-primary"></i>
@@ -127,7 +130,7 @@
                                                  </div>
                                               </div>
                                            </a>
-                                           <a {{ asset('asset/html/frontend/html/pricing-plan.html') }}" class="iq-sub-card setting-dropdown">
+                                           <a href="#" class="iq-sub-card setting-dropdown">
                                               <div class="media align-items-center">
                                                  <div class="right-icon">
                                                     <i class="ri-settings-4-line text-primary"></i>
@@ -137,7 +140,7 @@
                                                  </div>
                                               </div>
                                            </a>
-                                           <a href="{{ asset('asset/html/frontend/html/login.html') }}" class="iq-sub-card setting-dropdown">
+                                           <a href="#" class="iq-sub-card setting-dropdown">
                                               <div class="media align-items-center">
                                                  <div class="right-icon">
                                                     <i class="ri-logout-circle-line text-primary"></i>
@@ -186,8 +189,6 @@
                                   <div class="iq-card-body">
                                      <a href="#" class="iq-sub-card">
                                         <div class="media align-items-center">
-                                           <img src="images/notify/thumb-1.jpg" class="img-fluid mr-3"
-                                              alt="streamit" />
                                            <div class="media-body">
                                               <h6 class="mb-0 ">Boot Bitty</h6>
                                               <small class="font-size-12"> just now</small>
@@ -196,8 +197,6 @@
                                      </a>
                                      <a href="#" class="iq-sub-card">
                                         <div class="media align-items-center">
-                                           <img src="images/notify/thumb-2.jpg" class="img-fluid mr-3"
-                                              alt="streamit" />
                                            <div class="media-body">
                                               <h6 class="mb-0 ">The Last Breath</h6>
                                               <small class="font-size-12">15 minutes ago</small>
@@ -206,8 +205,6 @@
                                      </a>
                                      <a href="#" class="iq-sub-card">
                                         <div class="media align-items-center">
-                                           <img src="images/notify/thumb-3.jpg" class="img-fluid mr-3"
-                                              alt="streamit" />
                                            <div class="media-body">
                                               <h6 class="mb-0 ">The Hero Camp</h6>
                                               <small class="font-size-12">1 hour ago</small>
@@ -221,7 +218,7 @@
                          <li class="nav-item nav-icon">
                             <a href="#" class="iq-user-dropdown search-toggle p-0 d-flex align-items-center"
                                data-toggle="search-toggle">
-                            <img src="images/user/user.jpg" class="img-fluid avatar-40 rounded-circle" alt="user">
+                            <img src="{{ asset('asset/html/frontend/html/images/user/icon.png') }}" class="img-fluid avatar-40 rounded-circle" alt="user">
                             </a>
                             <div class="iq-sub-dropdown iq-user-dropdown">
                                <div class="iq-card shadow-none m-0">
