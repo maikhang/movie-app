@@ -260,7 +260,7 @@ header#main-header.menu-sticky {
     -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
-    z-index: 999;
+    z-index: 9999;
 }
 header .navbar .menu-header-menu-container,
 header .navbar .menu-all-pages-container,
@@ -1711,7 +1711,7 @@ iframe {
 /*---------------------------*/
 .m-profile {
     padding-top: 120px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 .manage-p {
     height: 100vh;
