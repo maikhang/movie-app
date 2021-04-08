@@ -22,13 +22,13 @@
                               <a href="{{ route('home.index') }}">Home</a>
                            </li>
                            <li class="menu-item">
-                              <a href="{{ route('movie.index') }}">Movies</a>
+                              <a href="{{ route('movie.index', 1) }}">Movies</a>
                            </li>
                            <li class="menu-item">
-                              <a href="{{ route('tv.index') }}">Tv Shows</a>
+                              <a href="{{ route('tv.index', 1) }}">Tv Shows</a>
                            </li>
                            <li class="menu-item">
-                              <a href="{{ route('actor.index') }}">Actors</a>
+                              <a href="{{ route('actor.index', 1) }}">Actors</a>
                            </li>
                         </ul>
                      </div>
@@ -70,8 +70,6 @@
                                         <div class="iq-card-body">
                                            <a href="#" class="iq-sub-card">
                                               <div class="media align-items-center">
-                                                 <img src="images/notify/thumb-1.jpg}" class="img-fluid mr-3"
-                                                    alt="streamit" />
                                                  <div class="media-body">
                                                     <h6 class="mb-0 ">Boop Bitty</h6>
                                                     <small class="font-size-12"> just now</small>
@@ -80,8 +78,6 @@
                                            </a>
                                            <a href="#" class="iq-sub-card">
                                               <div class="media align-items-center">
-                                                 <img src="images/notify/thumb-2.jpg" class="img-fluid mr-3"
-                                                    alt="streamit" />
                                                  <div class="media-body">
                                                     <h6 class="mb-0 ">The Last Breath</h6>
                                                     <small class="font-size-12">15 minutes ago</small>
@@ -90,8 +86,6 @@
                                            </a>
                                            <a href="#" class="iq-sub-card">
                                               <div class="media align-items-center">
-                                                 <img src="images/notify/thumb-3.jpg" class="img-fluid mr-3"
-                                                    alt="streamit" />
                                                  <div class="media-body">
                                                     <h6 class="mb-0 ">The Hero Camp</h6>
                                                     <small class="font-size-12">1 hour ago</small>
@@ -223,7 +217,7 @@
                             <div class="iq-sub-dropdown iq-user-dropdown">
                                <div class="iq-card shadow-none m-0">
                                   <div class="iq-card-body p-0 pl-3 pr-3">
-                                     <a href="{{ asset('asset/html/frontend/html/manage-profile.html') }}" class="iq-sub-card setting-dropdown">
+                                     <a href="#" class="iq-sub-card setting-dropdown">
                                         <div class="media align-items-center">
                                            <div class="right-icon">
                                               <i class="ri-file-user-line text-primary"></i>
@@ -233,7 +227,7 @@
                                            </div>
                                         </div>
                                      </a>
-                                     <a href="{{ asset('asset/html/frontend/html/setting.html') }}" class="iq-sub-card setting-dropdown">
+                                     <a href="#" class="iq-sub-card setting-dropdown">
                                         <div class="media align-items-center">
                                            <div class="right-icon">
                                               <i class="ri-settings-4-line text-primary"></i>
@@ -243,7 +237,7 @@
                                            </div>
                                         </div>
                                      </a>
-                                     <a href="{{ asset('asset/html/frontend/html/pricing-plan.html') }}" class="iq-sub-card setting-dropdown">
+                                     <a href="#" class="iq-sub-card setting-dropdown">
                                         <div class="media align-items-center">
                                            <div class="right-icon">
                                               <i class="ri-settings-4-line text-primary"></i>
@@ -253,7 +247,7 @@
                                            </div>
                                         </div>
                                      </a>
-                                     <a href="{{ asset('asset/html/frontend/html/login.html') }}" class="iq-sub-card setting-dropdown">
+                                     <a href="#" class="iq-sub-card setting-dropdown">
                                         <div class="media align-items-center">
                                            <div class="right-icon">
                                               <i class="ri-logout-circle-line text-primary"></i>
