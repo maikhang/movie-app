@@ -56,5 +56,8 @@
       <script src="{{ asset('asset/html/frontend/html/js/slick-animation.min.js') }}"></script>
       <!-- Custom JS-->
       <script src="{{ asset('asset/html/frontend/html/js/custom.js') }}"></script>
+      {{-- Scripts --}}
+      @yield('scripts')
    </body>
 </html>
+
