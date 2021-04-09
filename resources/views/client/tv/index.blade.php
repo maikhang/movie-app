@@ -1,7 +1,7 @@
 @extends('client.master')
 
 @section('content')
-<div class="main-content">
+<div class="main-content main-block-custom">
     {{-- Popular Movies --}}
     <section id="iq-favorites">
        <div class="container-fluid">

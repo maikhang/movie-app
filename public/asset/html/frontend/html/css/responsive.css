@@ -463,7 +463,7 @@
 }
 
 @media (min-width: 768px) {
-    .main-content {
+    .main-block-custom {
         padding-top: 100px;
     }
 }
