@@ -9,6 +9,8 @@ class MovieController extends Controller
 {
     //[GET] INDEX
     public function index($page=1){
+        abort_if($page > 500, 204);
+
         $popularMovies = Http::withToken(config('services.tmdb.token'))
                                 ->get('https://api.themoviedb.org/3/movie/popular?page='.$page)
                                 ->json()['results'];
