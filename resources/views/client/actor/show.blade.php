@@ -25,7 +25,7 @@
                         @endif
                         @if ($actor['homepage'] && $actor['homepage'] != 'null')
                         <a href="{{ $actor['homepage'] }}" target="_blank">
-                            <li><span><i class="ri-link-fill"></i></span></li>
+                            <li><span><i class="ri-link"></i></span></li>
                         </a>
                         @endif
                     </ul>
