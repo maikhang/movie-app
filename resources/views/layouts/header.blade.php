@@ -41,20 +41,9 @@
                       <div class="more-menu" aria-labelledby="dropdownMenuButton">
                          <div class="navbar-right position-relative">
                             <ul class="d-flex align-items-center justify-content-end list-inline m-0">
-                              {{-- <li>
-                                 <a href="#" class="search-toggle">
-                                 <i class="ri-search-line"></i>
-                                 </a>
-                                 <div class="search-box iq-search-bar">
-                                    <form action="#" class="searchbox">
-                                       <div class="form-group position-relative">
-                                          <input type="text" class="text search-input font-size-12"
-                                             placeholder="Type here to search...">
-                                          <i class="search-link ri-search-line"></i>
-                                       </div>
-                                    </form>
-                                 </div>
-                              </li> --}}
+                              {{-- Dropdown Menu Search --}}
+                              @livewire('search-dropdown')
+                              
                                <li class="nav-item nav-icon">
                                   <a href="#" class="search-toggle position-relative">
                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22"
@@ -154,20 +143,10 @@
                    </div>
                    <div class="navbar-right menu-right">
                       <ul class="d-flex align-items-center list-inline m-0">
-                         <li class="nav-item nav-icon">
-                            <a href="#" class="search-toggle device-search">
-                            <i class="ri-search-line"></i>
-                            </a>
-                            <div class="search-box iq-search-bar d-search">
-                               <form action="#" class="searchbox">
-                                  <div class="form-group position-relative">
-                                     <input type="text" class="text search-input font-size-12"
-                                        placeholder="type here to search...">
-                                     <i class="search-link ri-search-line"></i>
-                                  </div>
-                               </form>
-                            </div>
-                         </li>
+                         
+                        {{-- Dropdown Search --}}
+                        @livewire('search-dropdown')
+                        
                          <li class="nav-item nav-icon">
                             <a href="#" class="search-toggle" data-toggle="search-toggle">
                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"

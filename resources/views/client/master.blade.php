@@ -16,6 +16,8 @@
       <link rel="stylesheet" href="{{ asset('asset/html/frontend/html/css/style.css') }}" />
       <!-- Responsive -->
       <link rel="stylesheet" href="{{ asset('asset/html/frontend/html/css/responsive.css') }}" />
+      {{-- Livewire --}}
+      @livewireStyles
    </head>
    <body>
       <!-- loader Start -->
@@ -58,6 +60,8 @@
       <script src="{{ asset('asset/html/frontend/html/js/custom.js') }}"></script>
       {{-- Scripts --}}
       @yield('scripts')
+      {{-- Livewire --}}
+      @livewireScripts
    </body>
 </html>
 

@@ -161,7 +161,7 @@
         margin: 0 auto;
         left: 0;
         right: 0;
-        top: 60px;
+        top: 40px;
     }
     .mobile-more-menu .iq-user-dropdown img {
         width: 40px;
@@ -453,6 +453,7 @@
     #home-slider h1.slider-text {
         font-size: 26px;
         line-height: 32px;
+        padding: 10px 0;
     }
 
     .trending-info .trending-text {

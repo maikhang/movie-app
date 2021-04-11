@@ -2297,3 +2297,19 @@ span.flatpickr-weekday,
 a.iq-sub-card:hover .media {
     opacity: 0.8;
 }
+
+/* Loading Search Icon*/
+@keyframes spinAround {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    -webkit-animation: spinAround 500ms infinite linear;
+    animation: spinAround 500ms infinite linear;
+}
