@@ -638,7 +638,7 @@ li.slide-item:hover .block-images {
     top: 0;
     padding: 0 15px;
     bottom: 0;
-    z-index: 999;
+    z-index: 9;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -2279,6 +2279,8 @@ span.flatpickr-weekday,
 /*---------------------------------------------------------------------
                       Custom CSS
 -----------------------------------------------------------------------*/
+
+/* Hover Image Card Page (actor.index, movie.index, tv.index)*/
 .item-scroll:hover .block-images {
     transform: scale(1.1);
     transition: all 0.6s ease 0s;
@@ -2289,4 +2291,9 @@ span.flatpickr-weekday,
 }
 .item-scroll:hover .img-box {
     opacity: 0.6 !important;
+}
+
+/* Hover Card Search, Notification */
+a.iq-sub-card:hover .media {
+    opacity: 0.8;
 }
