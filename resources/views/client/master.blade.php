@@ -7,15 +7,15 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Streamit</title>
       <!-- Favicon -->
-      <link rel="shortcut icon" href="{{ secure_asset('asset/html/frontend/html/images/favicon.ico') }}" />
+      <link rel="shortcut icon" href="/asset/html/frontend/html/images/favicon.ico" />
       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="{{ secure_asset('asset/html/frontend/html/css/bootstrap.min.css') }}" />
+      <link rel="stylesheet" href="/asset/html/frontend/html/css/bootstrap.min.css" />
       <!-- Typography CSS -->
-      <link rel="stylesheet" href="{{ secure_asset('asset/html/frontend/html/css/typography.css') }}">
+      <link rel="stylesheet" href="/asset/html/frontend/html/css/typography.css">
       <!-- Style -->
-      <link rel="stylesheet" href="{{ secure_asset('asset/html/frontend/html/css/style.css') }}" />
+      <link rel="stylesheet" href="/asset/html/frontend/html/css/style.css" />
       <!-- Responsive -->
-      <link rel="stylesheet" href="{{ secure_asset('asset/html/frontend/html/css/responsive.css') }}" />
+      <link rel="stylesheet" href="/asset/html/frontend/html/css/responsive.css" />
       {{-- Livewire --}}
       @livewireStyles
    </head>
@@ -42,22 +42,22 @@
       </div>
       <!-- back-to-top End -->
       <!-- jQuery, Popper JS -->
-      <script src="{{ secure_asset('asset/html/frontend/html/js/jquery-3.4.1.min.js') }}"></script>
-      <script src="{{ secure_asset('asset/html/frontend/html/js/popper.min.js') }}"></script>
+      <script src="/asset/html/frontend/html/js/jquery-3.4.1.min.js"></script>
+      <script src="/asset/html/frontend/html/js/popper.min.js"></script>
       <!-- Bootstrap JS -->
-      <script src="{{ secure_asset('asset/html/frontend/html/js/bootstrap.min.js') }}"></script>
+      <script src="/asset/html/frontend/html/js/bootstrap.min.js"></script>
       <!-- Slick JS -->
-      <script src="{{ secure_asset('asset/html/frontend/html/js/slick.min.js') }}"></script>
+      <script src="/asset/html/frontend/html/js/slick.min.js"></script>
       <!-- owl carousel Js -->
-      <script src="{{ secure_asset('asset/html/frontend/html/js/owl.carousel.min.js') }}"></script>
+      <script src="/asset/html/frontend/html/js/owl.carousel.min.js"></script>
       <!-- select2 Js -->
-      <script src="{{ secure_asset('asset/html/frontend/html/js/select2.min.js') }}"></script>
+      <script src="/asset/html/frontend/html/js/select2.min.js"></script>
       <!-- Magnific Popup-->
-      <script src="{{ secure_asset('asset/html/frontend/html/js/jquery.magnific-popup.min.js') }}"></script>
+      <script src="/asset/html/frontend/html/js/jquery.magnific-popup.min.js"></script>
       <!-- Slick Animation-->
-      <script src="{{ secure_asset('asset/html/frontend/html/js/slick-animation.min.js') }}"></script>
+      <script src="/asset/html/frontend/html/js/slick-animation.min.js"></script>
       <!-- Custom JS-->
-      <script src="{{ secure_asset('asset/html/frontend/html/js/custom.js') }}"></script>
+      <script src="/asset/html/frontend/html/js/custom.js"></script>
       {{-- Scripts --}}
       @yield('scripts')
       {{-- Livewire --}}
