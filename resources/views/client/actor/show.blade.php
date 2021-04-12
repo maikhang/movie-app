@@ -131,14 +131,14 @@
             <div class="col-lg-12 mb-3">
                 <div class="sign-user_card" style="background: var(--iq-bg1);">
                     <h4 class="main-title mb-4 a-border">Credits</h4>
-                    <ul>
+                    <ul style="list-style: none; padding-inline-start: 0">
                         <h5 class="mb-1">Movies:</h5>
                         @foreach ($castMovies as $movie)
                         {{-- If Movie --}}
                         @if ($movie['media_type'] === 'movie')
                             <li>
                                 @if (isset($movie['release_date']))
-                                {{ Carbon\Carbon::parse($movie['release_date'])->format('M d, Y') }} &middot;
+                                - {{ Carbon\Carbon::parse($movie['release_date'])->format('M d, Y') }} &middot;
                                 @endif
                                 <strong><a href="{{ route('movie.show', $movie['id']) }}" style="color:var(--iq-primary); text-decoration: underline!important;">{{ $movie['title'] }}</a></strong>
                                 as @if ($movie['character'])
@@ -155,7 +155,7 @@
                         @if ($movie['media_type'] === 'tv')
                             <li>
                                 @if(isset($movie['first_air_date']))
-                                {{ Carbon\Carbon::parse($movie['first_air_date'])->format('M d, Y') }} &middot; 
+                                - {{ Carbon\Carbon::parse($movie['first_air_date'])->format('M d, Y') }} &middot; 
                                 @endif
                                 <strong><a href="{{ route('tv.show', $movie['id']) }}" style="color:var(--iq-primary); text-decoration: underline!important;">{{ $movie['name'] }}</a></strong>
                                 as @if ($movie['character'])
