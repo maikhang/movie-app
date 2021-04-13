@@ -2,11 +2,13 @@
 
 @section('content')
    <!-- Banner Start -->
+   @if (isset($tv['videos']['results'][0]))
    <div class="video-container iq-main-slider">
-      @if ($tv['videos']['results'])
       <iframe class="video d-block" src="https://www.youtube.com/embed/{{$tv['videos']['results'][0]['key']}}" frameborder="0" allow="" allowfullscreen></iframe>
-      @endif
    </div>
+   @else
+   <img src="{{ asset('asset/html/frontend/html/images/not-found-image-p.jpg') }}" class="img-fluid" alt="img">
+   @endif    
  <!-- Banner End -->
  <!-- MainContent -->
  <div class="main-content movie">
